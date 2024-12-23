@@ -27,7 +27,36 @@
     <link id="colors" href="css/colors/scheme-07.css" rel="stylesheet" type="text/css" />
     <link href="css/coloring.css" rel="stylesheet" type="text/css" />
 
+    <style>
+        .btn-container {
+          position: absolute;
+          left: 63%;
+          top: 73%;
+          z-index: 10;
+        }
+        .btn-container .btn {
+          margin-right: 10px;
+          width: 15vw;
+          height: 5vh;
+        }
+
+        .btn-success{
+            background-color: red;
+        }
+
+        .btn-danger{
+            margin-top: 22%;
+            background-color: grey;
+        }
+
+        .btn-danger:hover{
+            background-color: black !important;
+        }
+
+      </style>
+
 </head>
+
 
 <body class="dark-scheme">
     <div id="wrapper">
@@ -45,7 +74,7 @@
                                     <!-- logo begin -->
                                     <div id="logo">
                                         <a href="#">
-                                            <img alt="" src="images-dj/logo.png" / style="height: 100px;">
+                                            <img alt="" src="images/logo.png" style="height: 100px;">
                                         </a>
                                     </div>
                                     <!-- logo close -->
@@ -81,17 +110,27 @@
             <!-- Hero Header -->
             <section id="hero" class="no-top no-bottom">
                 <div class="container-fluid">
-                    <img src="images-dj/header.jpg" class="img-fluid" style="min-width: 100%!important;">
+                    <img src="images/header.jpg" class="img-fluid" style="min-width: 100%!important;">
                 </div>
             </section>
             <!-- Hero Header End -->
             
             <section id="lineup">
                 <div class="container">
-                    <div class="row"></div>
-                    <div class="col-md-12 col-12 text-center">
-                        <img src="images-dj/refund.jpg" class="img-fluid" alt="">
+                    <div class="row">
+                        <div class="col-md-12 col-12 text-center position-relative">
+                            <img src="images/refund.jpg" alt="Background Image" class="img-fluid">
+                        </div>
+                        <div class="col-md-12 col-12 text-center position-relative">
+                            <img src="images/jersey.jpg" alt="Background Image" class="img-fluid">
+                            <div class="btn-container">
+                                <button class="btn btn-success">Yes</button>
+                                <br>
+                                <button class="btn btn-danger">No</button>
+                            </div>
+                        </div>
                     </div>
+                    
                 </div>
             </section>
             

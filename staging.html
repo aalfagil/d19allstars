@@ -28,12 +28,6 @@
     <link href="css/coloring.css" rel="stylesheet" type="text/css" />
 
     <style>
-        .btn-container {
-          position: absolute;
-          left: 62%;
-          top: 70%;
-          z-index: 10;
-        }
         .btn-container .btn {
             display: flex;
             justify-content: center;
@@ -54,46 +48,12 @@
             background-color: black !important;
         }
 
-        @media (min-width:320px) and (max-width:800px)   { 
-            .btn-container {
-                left: 55%;
-                top: 72%;
-            }
-            .btn-container .btn {
-                width: 8rem;
-                height: 1rem;
-                font-size: 12px !important;
-            }
+        @media (min-width:320px) and (max-width:641px)   { 
+          .con-danger{
+            margin-top: 10%;
+          }
 
-            .btn-success{
-                background-color: red;
-            }
-
-            .btn-danger{
-                margin-top: -15%;
-                background-color: grey;
-            }
          }
-        @media (min-width:801px) and (max-width:961px)  {
-            .btn-container {
-                left: 55%;
-                top: 72%;
-            }
-            .btn-container .btn {
-                width: 18rem;
-                height: 2rem;
-                font-size: 12px !important;
-            }
-
-            .btn-success{
-                background-color: red;
-            }
-
-            .btn-danger{
-                margin-top: -5%;
-                background-color: grey;
-            }
-        }
 
     </style>
 
@@ -165,10 +125,15 @@
                         </div>
                         <div class="col-md-12 col-12 text-center position-relative">
                             <img src="images/jersey.jpg" alt="Background Image" class="img-fluid">
-                            <div class="btn-container">
-                                <a href="https://forms.gle/21QyNGjHW4xNsuN56" target="_blank" class="btn btn-success">Yes</a>
-                                <br>
-                                <a href="https://forms.gle/sPHN3NR9WSdrP8kX7" target="_blank" class="btn btn-danger">No</a>
+                            <div class="btn-container row ">
+                                <div class="col-md-6 col-12">
+                                    <h3>YES gw dukung Timnas Bareng Dewa</h3>
+                                    <a href="https://forms.gle/21QyNGjHW4xNsuN56" target="_blank" class="btn btn-success w-100">Go</a>
+                                </div>
+                                <div class="col-md-6 col-12 con-danger">
+                                    <h3>Jika Anda berhalangan hadir, Klik button di bawah ini</h3>
+                                    <a href="https://forms.gle/sPHN3NR9WSdrP8kX7" target="_blank" class="btn btn-danger w-100">No</a>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -30,14 +30,16 @@
     <style>
         .btn-container {
           position: absolute;
-          left: 63%;
-          top: 73%;
+          left: 62%;
+          top: 70%;
           z-index: 10;
         }
         .btn-container .btn {
-          margin-right: 10px;
-          width: 15vw;
-          height: 5vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          width: 20rem;
+          height: 3rem;
         }
 
         .btn-success{
@@ -45,7 +47,6 @@
         }
 
         .btn-danger{
-            margin-top: 22%;
             background-color: grey;
         }
 
@@ -53,7 +54,48 @@
             background-color: black !important;
         }
 
-      </style>
+        @media (min-width:320px) and (max-width:800px)   { 
+            .btn-container {
+                left: 55%;
+                top: 72%;
+            }
+            .btn-container .btn {
+                width: 8rem;
+                height: 1rem;
+                font-size: 12px !important;
+            }
+
+            .btn-success{
+                background-color: red;
+            }
+
+            .btn-danger{
+                margin-top: -15%;
+                background-color: grey;
+            }
+         }
+        @media (min-width:801px) and (max-width:961px)  {
+            .btn-container {
+                left: 55%;
+                top: 72%;
+            }
+            .btn-container .btn {
+                width: 18rem;
+                height: 2rem;
+                font-size: 12px !important;
+            }
+
+            .btn-success{
+                background-color: red;
+            }
+
+            .btn-danger{
+                margin-top: -5%;
+                background-color: grey;
+            }
+        }
+
+    </style>
 
 </head>
 
@@ -124,9 +166,9 @@
                         <div class="col-md-12 col-12 text-center position-relative">
                             <img src="images/jersey.jpg" alt="Background Image" class="img-fluid">
                             <div class="btn-container">
-                                <button class="btn btn-success">Yes</button>
+                                <a href="https://forms.gle/21QyNGjHW4xNsuN56" target="_blank" class="btn btn-success">Yes</a>
                                 <br>
-                                <button class="btn btn-danger">No</button>
+                                <a href="https://forms.gle/sPHN3NR9WSdrP8kX7" target="_blank" class="btn btn-danger">No</a>
                             </div>
                         </div>
                     </div>

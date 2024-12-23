@@ -36,16 +36,14 @@
           height: 3rem;
         }
 
-        .btn-success{
-            background-color: red;
-        }
 
-        .btn-danger{
+        .btn-disabled{
             background-color: grey;
+            color: white;
         }
 
         .btn-danger:hover{
-            background-color: black !important;
+            background-color: green !important;
         }
 
         .modal-content {
@@ -133,11 +131,11 @@
                             <div class="btn-container row ">
                                 <div class="col-md-6 col-12">
                                     <h3>YES gw dukung Timnas Bareng Dewa</h3>
-                                    <a href="https://forms.gle/sPHN3NR9WSdrP8kX7" target="_blank" class="btn btn-success w-100">Go</a>
+                                    <a href="https://forms.gle/sPHN3NR9WSdrP8kX7" target="_blank" class="btn btn-danger w-100">Go</a>
                                 </div>
                                 <div class="col-md-6 col-12 con-danger">
                                     <h3>Jika Anda berhalangan hadir, Klik button di bawah ini</h3>
-                                    <a href="" class="btn btn-danger w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">No</a>
+                                    <a href="" class="btn btn-disabled w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">No</a>
                                 </div>
                             </div>
                         </div>
@@ -179,8 +177,8 @@
                     </h3>
                 </div>
                 <div class="modal-footer">
-                <button type="button" class="btn btn-lg btn-success w-100" data-bs-dismiss="modal">BENTAR! GUE MAU DUKUNG!</button>
-                <a href="https://forms.gle/21QyNGjHW4xNsuN56" target="_blank" type="button" class="btn btn-lg btn-danger w-100">YAKIN</a>
+                <button type="button" class="btn btn-lg btn-danger w-100" data-bs-dismiss="modal">BENTAR! GUE MAU DUKUNG!</button>
+                <a href="https://forms.gle/21QyNGjHW4xNsuN56" target="_blank" type="button" class="btn btn-lg btn-disabled w-100">YAKIN</a>
                 </div>
             </div>
             </div>

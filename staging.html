@@ -48,6 +48,11 @@
             background-color: black !important;
         }
 
+        .modal-content {
+      background-color: #ffffff !important;
+      color: #000000; /* Ensure text is visible on the white background */
+    }
+
         @media (min-width:320px) and (max-width:641px)   { 
           .con-danger{
             margin-top: 10%;
@@ -128,11 +133,11 @@
                             <div class="btn-container row ">
                                 <div class="col-md-6 col-12">
                                     <h3>YES gw dukung Timnas Bareng Dewa</h3>
-                                    <a href="https://forms.gle/21QyNGjHW4xNsuN56" target="_blank" class="btn btn-success w-100">Go</a>
+                                    <a href="https://forms.gle/sPHN3NR9WSdrP8kX7" target="_blank" class="btn btn-success w-100">Go</a>
                                 </div>
                                 <div class="col-md-6 col-12 con-danger">
                                     <h3>Jika Anda berhalangan hadir, Klik button di bawah ini</h3>
-                                    <a href="https://forms.gle/sPHN3NR9WSdrP8kX7" target="_blank" class="btn btn-danger w-100">No</a>
+                                    <a href="" class="btn btn-danger w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">No</a>
                                 </div>
                             </div>
                         </div>
@@ -160,6 +165,27 @@
             </div>
         </footer>
         <!-- footer close -->
+
+         <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <h3>
+                        Yakin lo nggak mau dukung Timas bareng Dewa19??
+                    </h3>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-lg btn-success w-100" data-bs-dismiss="modal">BENTAR! GUE MAU DUKUNG!</button>
+                <a href="https://forms.gle/21QyNGjHW4xNsuN56" target="_blank" type="button" class="btn btn-lg btn-danger w-100">YAKIN</a>
+                </div>
+            </div>
+            </div>
+        </div>
+
     </div>
 
     <!-- Javascript Files
